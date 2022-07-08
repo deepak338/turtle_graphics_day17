@@ -20,10 +20,15 @@ def backward():
     tim.back(10)
 
 
+def clear():
+    tim.reset()
+
+
 screen.listen()
 screen.onkey(key="d", fun=turn_right)
 screen.onkey(key="a", fun=turn_left)
 screen.onkey(key="w", fun=forward)
 screen.onkey(key="s", fun=backward)
+screen.onkey(key="c", fun=clear)
 
 screen.exitonclick()
